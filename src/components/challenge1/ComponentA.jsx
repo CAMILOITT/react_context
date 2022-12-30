@@ -1,4 +1,5 @@
-import ComponentB from './ComponentB';
+import ComponentB from './componentB/ComponentB';
+import Contact from './Contact';
 
 export default function ComponentA() {
   const defaultContact = new Contact(
@@ -9,7 +10,7 @@ export default function ComponentA() {
   );
   return (
     <div>
-      <ComponentB contact={defaultContact} />
+      <ComponentB newContact={defaultContact} />
     </div>
   );
 }

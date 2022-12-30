@@ -1,0 +1,42 @@
+.target {
+  width: 350px;
+  background: #000;
+  padding: 20px 25px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.target__fullName {
+  font-size: 25px;
+}
+.target__email {
+  text-align: left;
+  margin-block: 10px;
+}
+.target__state {
+  text-align: left;
+  margin-block-end: 15px;
+}
+.state__contact {
+  font-weight: bold;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.state__contact-online {
+  color: green;
+}
+.state__contact-offline {
+  color: red;
+}
+.target__btn {
+  margin: auto;
+  font-weight: bold;
+}
+.target__btn:focus {
+  outline: none;
+}

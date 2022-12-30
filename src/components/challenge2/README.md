@@ -1,4 +1,5 @@
-transformar
+transformar el siguiente código de clase a uno funcional
+
 ```
 import React, { Component } from 'react'
 import ‘../../styles/clock.scss’;

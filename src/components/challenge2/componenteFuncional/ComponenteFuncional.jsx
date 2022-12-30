@@ -1,27 +1,24 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function ComponenteFuncional() {
-  const [time, setTime] = useState(new Date());
+  const [time, setTime] = useState(new Date().toLocaleString());
   const [age, setAge] = useState(0);
   const [name, setName] = useState('Martin');
   const [lastName, setLastName] = useState('San Jose');
-
   useEffect(() => {
     const timeID = setInterval(() => {
       tick();
     }, 1000);
-    
+
     return () => {
       clearInterval(timeID);
     };
-    
-  }, []);
+  });
 
   function tick() {
-    setTime(new Date());
+    setTime(new Date().toLocaleString());
     setAge((age) => age + 1);
   }
-
   return (
     <div>
       <h2>{time}</h2>
