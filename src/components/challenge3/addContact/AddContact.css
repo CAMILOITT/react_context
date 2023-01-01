@@ -1,0 +1,24 @@
+.addContact {
+  padding: 20px;
+}
+.addContact__containerInput {
+  display: grid;
+  grid-template-columns: repeat(2, 1turn);
+  grid-template-rows: repeat(2, 1turn);
+  gap: 5px;
+}
+.containerInput__input {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.checkbox__check{
+  margin-block: 15px;
+  margin-inline-end: 10px;
+}

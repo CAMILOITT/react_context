@@ -1,0 +1,36 @@
+.listContact {
+  list-style: none;
+  padding: 30px 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  min-width: 270px;
+  height: 60vh;
+  overflow-y: scroll;
+}
+.listContact::-webkit-scrollbar {
+  display: none;
+}
+
+.listContact__userContact {
+  margin-block: 30px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.userContact__fullName {
+  text-align: center;
+  font-size: clamp(19px, 4vw, 24px);
+}
+.userContact__connect {
+  margin-block-end: 10px;
+  font-weight: bold;
+}
+.userContact__btn-connect {
+  margin-inline-end: 15px;
+}

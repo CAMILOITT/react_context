@@ -1,17 +1,20 @@
+import './ListContact.css';
 export default function ListContact({ listContacts, list, modify }) {
+  
   function handleChangeConnect(key) {
-    const newList = listContacts;
+    const newList = [...listContacts];
     const contact = newList.find((contact) => contact.id === key);
     const positionContact = newList.indexOf(contact);
-    contact.connect ? (contact.connect = false) : (contact.connect = true);
+    contact.connect = !contact.connect;
     newList[positionContact] = contact;
-    console.log(listContacts);
     modify(newList);
   }
+
   function handleDelete(key) {
     const newList = listContacts.filter((contact) => contact.id !== key);
     list(newList);
   }
+
   return (
     <ul className="listContact">
       {listContacts.map((contact) => (

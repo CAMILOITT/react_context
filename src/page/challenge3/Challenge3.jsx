@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import AddContact from '../../components/challenge3/addContact/AddContact';
 import ListContact from '../../components/challenge3/listContact/ListContact';
+import './Challenge3.css';
 
 export default function Challenge3() {
   const [list, setList] = useState([]);
@@ -18,9 +19,9 @@ export default function Challenge3() {
   return (
     <div>
       <div>
-        <h1>Contactos</h1>
+        <h1 className="titleContact">Contactos</h1>
       </div>
-      <div>
+      <div className="containerContact">
         <ListContact
           listContacts={list}
           list={deleteContact}
