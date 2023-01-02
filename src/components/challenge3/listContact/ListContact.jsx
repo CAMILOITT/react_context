@@ -1,6 +1,5 @@
 import './ListContact.css';
 export default function ListContact({ listContacts, list, modify }) {
-  
   function handleChangeConnect(key) {
     const newList = [...listContacts];
     const contact = newList.find((contact) => contact.id === key);

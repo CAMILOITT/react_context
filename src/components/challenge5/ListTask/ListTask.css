@@ -1,0 +1,28 @@
+.listTask {
+  overflow-y: scroll;
+  list-style: none;
+  text-align: center;
+}
+.listTask::-webkit-scrollbar {
+  display: none;
+}
+.listTask__task {
+  display: grid;
+  grid-template-areas: 'title btn' 'body btn';
+  min-width: 270px;
+  margin-block-end: 20px;
+  justify-content: space-between;
+}
+.task__title {
+  grid-area: title;
+  margin-block-end: 10px;
+}
+.task__body {
+  grid-area: body;
+}
+.task__btn {
+  grid-area: btn;
+  width: 100px;
+  padding: 0;
+  height: 40px;
+}

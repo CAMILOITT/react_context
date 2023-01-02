@@ -1,0 +1,15 @@
+.formTask {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.formTask__input {
+  padding: 5px 10px;
+  outline: none;
+}
+.formTask__messageError {
+  display: block;
+  height: 20px;
+  color: red;
+  font-weight: bold;
+}
