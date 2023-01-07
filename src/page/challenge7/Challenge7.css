@@ -1,0 +1,50 @@
+.main__imgChucknorris {
+  width: 400px;
+  margin-block-end: 20px;
+}
+.main__chuckJokes {
+  width: 400px;
+  display: grid;
+  grid-template-areas: 'img message message' 'btn btn btn';
+  gap: 20px 10px;
+  align-items: center;
+}
+.chuckJokes__groupBtn {
+  grid-area: btn;
+  justify-content: center;
+  font-weight: bold;
+}
+.chuckJokes__groupBtn button {
+  color: black;
+  background: orange;
+  border: none;
+  font-weight: bold;
+}
+.chuckJokes__groupBtn button:hover {
+  color: white;
+  background: rgb(196, 129, 4);
+}
+.chuckJokes__avatar {
+  height: 100px;
+  width: 100px;
+  background: #000;
+  justify-self: center;
+}
+.chuckJokes__joke {
+  grid-area: message;
+}
+
+.main__totalLikes {
+  display: flex;
+  gap: 10px 30px;
+  margin-block: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+.totalLikes__likes {
+  color: greenyellow;
+}
+.totalLikes__dislikes {
+  color: red;
+}

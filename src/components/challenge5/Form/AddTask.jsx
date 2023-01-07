@@ -49,19 +49,19 @@ export default function AddTask({ create }) {
               placeholder="titulo"
               className="formTask__input"
             />
-            <span className="formTask__messageError">
-              {errors.title && touched.title && <ErrorMessage name="title" />}
-            </span>
             <Field
               type="text"
               name="body"
               placeholder="descripción"
               className="formTask__input"
             />
+            <button type="submit">añadir tarea</button>
+            <span className="formTask__messageError">
+              {errors.title && touched.title && <ErrorMessage name="title" />}
+            </span>
             <span className="formTask__messageError">
               {errors.body && errors.body && <ErrorMessage name="body" />}
             </span>
-            <button type="submit">añadir tarea</button>
           </Form>
         )}
       </Formik>
