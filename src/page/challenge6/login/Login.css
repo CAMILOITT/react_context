@@ -1,0 +1,15 @@
+.formSign {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 260px;
+}
+.formSign__messageError {
+  color: red;
+  font-weight: bold;
+  /* opacity: 0; */
+}
+.formSign__input {
+  padding: 5px 10px;
+  outline: none;
+}
