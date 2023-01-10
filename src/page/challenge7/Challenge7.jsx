@@ -61,9 +61,6 @@ export default function Challenge7() {
       <div className="main__chuckJokes">
         <img src={message.icon_url} alt="img" className="chuckJokes__avatar" />
         <p className="chuckJokes__joke">{message.value}</p>
-        {/* <button onClick={getData}> Generar un nuevo chiste</button>
-        <button onClick={incrementLike}>like</button>
-        <button onClick={incrementDislike}>dislike</button> */}
         <ButtonGroup
           variant="contained"
           aria-label="outlined primary button group"
